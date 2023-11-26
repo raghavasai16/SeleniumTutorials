@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selenium_Screenshots</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
+
+    <div id="content">
+        <p class="title">
+            Hi <span id="username"></span>,Welcome to Selenium tutorials,below we are discussing about three different methods of taking screenshots in Selenium
+        </p>
+        <article class="method1">
+            <p><h1>Taking whole screen as ScreenShot:</h1></p>
+            <img src="FullScreen.png" alt="FullScreen">
+        </article>
+        <article class="method2">
+            <p>
+                <h1>Taking Specific element screenshot</h1>
+            </p>
+            <img src="WebElement.png" alt="Specific">
+        </article>
+        <article class="method3">
+            <p>
+                <h1>By Adding shutterbug maven dependices in pom.xml </h1>
+            </p>
+            <img src="shutter.png" alt="Shutter_bug">
+            
+        </article>
+        <aside class="context">
+            <p class="reference">
+                The title of the image will be saved as Timeshot format 
+                <a  href="https://mvnrepository.com/artifact/com.assertthat/selenium-shutterbug/1.6" target="_blank">Click here for dependcies</a>
+             </p>
+        </aside>
+    </Section>
+    <footer >
+        CopyRight&copy 2023 Batchu Veera Raghava
+    </footer>
+    
+</body>
+<script>
+    const username=prompt("please enter your name");
+  
+    const name = document.getElementById('username');
+    name.textContent=username.toUpperCase();
+    document.addEventListener("DOMContentLoaded", function () {
+    // Hide the loader when the page has fully loaded
+    document.getElementById("loader-wrapper").style.display = "none";
+    // Show the main content
+    document.getElementById("content").style.display = "block";
+});
+</script> 
+</html>
