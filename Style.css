@@ -97,7 +97,7 @@ footer
 a
 {
     text-decoration: none;
-    padding: 1rem;
+/*     padding: 1rem; */
     background-color: rgb(250, 205, 6);
     border-radius: 10px;
     cursor: pointer;
